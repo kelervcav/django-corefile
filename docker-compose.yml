@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  core-service:
+    build: .
+    command: python manage.py runserver 0.0.0.0:5000
+    container_name: core-service
+    volumes:
+      - .:/code
+    ports:
+      - 8000:5000

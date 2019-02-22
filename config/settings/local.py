@@ -13,12 +13,16 @@ REST_FRAMEWORK = {
     'UNAUTHENTICATED_USER': None,
 }
 
+config = configparser.ConfigParser()
+config.read('env.ini')
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'database_name',
-        'USER': 'database_user',
-        'PASSWORD': 'database_password',
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'ENGINE': config['LOCAL']['DATABASE_ENGINE'],
+        'NAME': config['LOCAL']['DATABASE_NAME'],
+        'USER': config['LOCAL']['DATABASE_USER'],
+        'PASSWORD': config['LOCAL']['DATABASE_PASSWORD'],
+        'HOST': config['LOCAL']['DATABASE_HOST'],
+        'PORT': config['LOCAL']['DATABASE_PORT'],
     }
 }

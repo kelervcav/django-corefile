@@ -43,7 +43,7 @@ DATABASE_PORT =
 **Note:** Configure your database settings here.
 
 
-#### Working With Multiple Settings Modules
+## Working With Multiple Settings Modules
 
 You have to configure which `settings` module you want to use:
 ```

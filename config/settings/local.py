@@ -1,4 +1,8 @@
 from .base import *
+import configparser
+
+config = configparser.ConfigParser()
+config.read('env.ini')
 
 DEBUG = True
 
@@ -12,9 +16,6 @@ REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'rest_framework.views.exception_handler',
     'UNAUTHENTICATED_USER': None,
 }
-
-config = configparser.ConfigParser()
-config.read('env.ini')
 
 DATABASES = {
     'default': {

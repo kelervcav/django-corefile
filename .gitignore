@@ -4,11 +4,12 @@ __pycache__/
 *$py.class
 
 # Distribution / packaging
+env.ini
 .Python
+.vscode/
 env/
 build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/

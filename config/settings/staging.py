@@ -19,10 +19,10 @@ REST_FRAMEWORK = {
 
 DATABASES = {
     'default': {
-        'ENGINE': config['UAT']['DATABASE_ENGINE'],
-        'NAME': config['UAT']['DATABASE_NAME'],
-        'USER': config['UAT']['DATABASE_USER'],
-        'PASSWORD': config['UAT']['DATABASE_PASSWORD'],
-        'HOST': config['UAT']['DATABASE_HOST'],
+        'ENGINE': config['STAGING']['DATABASE_ENGINE'],
+        'NAME': config['STAGING']['DATABASE_NAME'],
+        'USER': config['STAGING']['DATABASE_USER'],
+        'PASSWORD': config['STAGING']['DATABASE_PASSWORD'],
+        'HOST': config['STAGING']['DATABASE_HOST'],
     }
 }
